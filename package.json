@@ -1,0 +1,43 @@
+{
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4",
+    "typescript-eslint": "^8.50.0"
+  },
+  "scripts": {
+    "start": "node tutorial.js",
+    "test": "echo \"No tests yet\"",
+    "prepare": "husky install",
+    "format": "prettier --write \"src/**/*.{js,ts,jsx,tsx,json,css,md}",
+    "lint": "eslint"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "name": "adventure_game",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".prettierrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lectus-nandani-khalas/adventure_game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lectus-nandani-khalas/adventure_game/issues"
+  },
+  "homepage": "https://github.com/lectus-nandani-khalas/adventure_game#readme"
+}

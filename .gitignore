@@ -1,0 +1,5 @@
+node_modules/
+#Ignore all text files
+*.txt 
+adventure_key
+adventure_key.pub

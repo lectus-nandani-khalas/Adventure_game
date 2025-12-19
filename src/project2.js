@@ -1,0 +1,49 @@
+const prompt = require("prompt-sync")();
+
+function getNumber(numberString){
+    while(true){
+    const number = parseFloat(prompt("Enter Number: " + numberString + ": "))
+    if(isNaN(number)){
+
+    console.log("Please Enter a valid number");
+                     }
+    else{
+    return number;
+        }
+    }
+
+}
+let number1 = getNumber("1");
+let number2 = getNumber("2");
+        
+const operator = prompt("Enter Sign: ");
+valid = true;
+let result;
+switch(operator){
+    case "+":
+        result = number1 + number2;
+        break;
+        case "-":
+        result = number1 - number2;
+        break;
+        case "*":
+        result = number1 * number2;
+        break;
+        case "/":
+            if(number2===0){
+                console.log("Zero division error");
+                valid=false;
+                break;
+            }
+        result = number1 / number2;
+        break;
+        default:
+            console.log("Invalid");
+            valid=false;
+            break;
+}
+if(valid){
+        console.log(number1,operator,number2,"=",result);
+    }
+
+

@@ -17,7 +17,7 @@ let number1 = getNumber("1");
 let number2 = getNumber("2");
         
 const operator = prompt("Enter Sign: ");
-valid = true;
+let valid = true;
 let result;
 switch(operator){
     case "+":
